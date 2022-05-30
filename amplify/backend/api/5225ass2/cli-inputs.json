@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/images": {
+      "name": "/images",
+      "lambdaFunction": "testapifunc",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}

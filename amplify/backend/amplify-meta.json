@@ -1,0 +1,233 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-5225ass2-dev-130432-authRole",
+      "UnauthRoleArn": "arn:aws:iam::041646166635:role/amplify-5225ass2-dev-130432-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::041646166635:role/amplify-5225ass2-dev-130432-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-5225ass2-dev-130432-deployment",
+      "UnauthRoleName": "amplify-5225ass2-dev-130432-unauthRole",
+      "StackName": "amplify-5225ass2-dev-130432",
+      "StackId": "arn:aws:cloudformation:us-east-1:041646166635:stack/amplify-5225ass2-dev-130432/2c48d8f0-dbe8-11ec-b6bb-0af1b925e4b1",
+      "AmplifyAppId": "d1t96qrm8so3t0",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-5225ass2-dev-130432-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    }
+  },
+  "auth": {
+    "5225ass27ed45a29": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL",
+          "FAMILY_NAME",
+          "GIVEN_NAME"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "output": {
+        "UserPoolId": "us-east-1_64pcvdQj8",
+        "AppClientIDWeb": "4i90oqpk366ej1nevf2r7aj48k",
+        "AppClientID": "6g3qnupk4lpfl7pkv1vdbm5pf3",
+        "IdentityPoolId": "us-east-1:c4a2bf9f-16ed-4f64-918d-aa460afc988d",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:041646166635:userpool/us-east-1_64pcvdQj8",
+        "IdentityPoolName": "5225ass27ed45a29_identitypool_7ed45a29__dev",
+        "UserPoolName": "5225ass27ed45a29_userpool_7ed45a29"
+      },
+      "lastPushTimeStamp": "2022-05-25T14:35:27.426Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-5225ass2-dev-130432-deployment/amplify-cfn-templates/auth/5225ass27ed45a29-cloudformation-template.json",
+        "logicalId": "auth5225ass27ed45a29"
+      }
+    }
+  },
+  "storage": {
+    "imageupload": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "BucketName": "imageupload130432-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushTimeStamp": "2022-05-25T14:35:27.434Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-5225ass2-dev-130432-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageimageupload"
+      }
+    }
+  },
+  "function": {
+    "testapifunc": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "lastBuildTimeStamp": "2022-05-25T14:31:07.795Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-05-25T14:31:11.344Z",
+      "distZipFilename": "testapifunc-69715035353936665633-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-5225ass2-dev-130432-deployment",
+        "s3Key": "amplify-builds/testapifunc-69715035353936665633-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-5225ass2-dev-130432-deployment/amplify-cfn-templates/function/testapifunc-cloudformation-template.json",
+        "logicalId": "functiontestapifunc"
+      },
+      "lastPushTimeStamp": "2022-05-25T14:35:28.746Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:041646166635:function:testapifunc-dev",
+        "Name": "testapifunc-dev",
+        "LambdaExecutionRole": "5225ass2LambdaRoleed4eb294-dev"
+      },
+      "lastPushDirHash": "M+TRc0GOCkHuxxn7P1Pz6QND6+I="
+    },
+    "5225ass24164cd9f": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "lastBuildTimeStamp": "2022-05-25T14:31:35.080Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-05-25T14:31:38.262Z",
+      "distZipFilename": "5225ass24164cd9f-36426e6b47392f713777-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-5225ass2-dev-130432-deployment",
+        "s3Key": "amplify-builds/5225ass24164cd9f-36426e6b47392f713777-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-5225ass2-dev-130432-deployment/amplify-cfn-templates/function/5225ass24164cd9f-cloudformation-template.json",
+        "logicalId": "function5225ass24164cd9f"
+      },
+      "lastPushTimeStamp": "2022-05-25T14:35:28.746Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:041646166635:function:5225ass24164cd9f-dev",
+        "Name": "5225ass24164cd9f-dev",
+        "LambdaExecutionRole": "5225ass2LambdaRole06e3f99a-dev"
+      },
+      "lastPushDirHash": "hSDuaxUUw6Mi7FZTqoSQ6/xFjzE="
+    },
+    "testdemofunc": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "lastBuildTimeStamp": "2022-05-25T14:31:04.416Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-05-25T14:31:08.835Z",
+      "distZipFilename": "testdemofunc-6a636d4167556761444a-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-5225ass2-dev-130432-deployment",
+        "s3Key": "amplify-builds/testdemofunc-6a636d4167556761444a-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-5225ass2-dev-130432-deployment/amplify-cfn-templates/function/testdemofunc-cloudformation-template.json",
+        "logicalId": "functiontestdemofunc"
+      },
+      "lastPushTimeStamp": "2022-05-25T14:35:28.746Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:041646166635:function:testdemofunc-dev",
+        "Name": "testdemofunc-dev",
+        "LambdaExecutionRole": "5225ass2LambdaRolec00eef92-dev"
+      },
+      "lastPushDirHash": "1nar0PVRLPDJS99kAsiSTQlgv4Q="
+    }
+  },
+  "api": {
+    "fit5225a2jt": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "5225ass24164cd9f",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-5225ass2-dev-130432-deployment/amplify-cfn-templates/api/fit5225a2jt-cloudformation-template.json",
+        "logicalId": "apifit5225a2jt"
+      },
+      "lastPushTimeStamp": "2022-05-25T14:35:28.746Z",
+      "output": {
+        "ApiName": "fit5225a2jt",
+        "RootUrl": "https://svzjgu52uj.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "svzjgu52uj"
+      },
+      "lastPushDirHash": "Y44ELFoeppuP3Od0bGXKNUxC01Y="
+    },
+    "api86fc84d5": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "5225ass24164cd9f",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-5225ass2-dev-130432-deployment/amplify-cfn-templates/api/api86fc84d5-cloudformation-template.json",
+        "logicalId": "apiapi86fc84d5"
+      },
+      "lastPushTimeStamp": "2022-05-25T14:35:28.746Z",
+      "output": {
+        "ApiName": "api86fc84d5",
+        "RootUrl": "https://s3g0p5zyw7.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "s3g0p5zyw7"
+      },
+      "lastPushDirHash": "prVrsATjOnlw0l/FQZOhvTbj/nI="
+    },
+    "fit5225assignment2jt": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "testdemofunc",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-5225ass2-dev-130432-deployment/amplify-cfn-templates/api/fit5225assignment2jt-cloudformation-template.json",
+        "logicalId": "apifit5225assignment2jt"
+      },
+      "lastPushTimeStamp": "2022-05-25T14:35:28.746Z",
+      "output": {
+        "ApiName": "fit5225assignment2jt",
+        "RootUrl": "https://qr5aqp6t61.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "qr5aqp6t61"
+      },
+      "lastPushDirHash": "tqBPn8zwrMqmXlaMwS0WiHpuSXE="
+    }
+  }
+}

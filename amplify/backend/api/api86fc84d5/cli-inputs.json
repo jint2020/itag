@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/images": {
+      "name": "/images",
+      "lambdaFunction": "5225ass24164cd9f",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}
